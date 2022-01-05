@@ -72,5 +72,8 @@ print(movie.strip(), end="***\n")
 print(movie.split('e'))
 
 # remove whitespace and split into a list based on a str
-print(movie.strip().split('e'))
+split_movie = movie.strip().split('e')
+print(split_movie)
+
+print('****'.join(split_movie))
 
