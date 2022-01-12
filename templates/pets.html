@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Our Fluffy Lovely Pet Things</title>
+</head>
+<body>
+<h1>Hi! We are {{ fluffy_data.company_name }}! Look at our pets!</h1>
+<h2>Cats</h2>
+<ul>{% for cat in fluffy_data.cats %}
+<li>{{ cat }}</li>{% endfor %}
+</ul>
+<h2>Dogs</h2>
+<ul>{% for dog in fluffy_data.dogs %}
+<li>{{ dog }}</li>{% endfor %}
+</ul>
+{% if 'hamsters' in fluffy_data %}
+<h2>Hamsters</h2>{% endif %}
+
+</body>
+</html>
